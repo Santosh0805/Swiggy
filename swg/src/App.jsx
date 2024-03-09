@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <div className=''>
-         
+         <h1>Swiggy Mart</h1>
       </div>
     </>
   )
