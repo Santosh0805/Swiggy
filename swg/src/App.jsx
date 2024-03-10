@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -11,20 +9,18 @@ function App() {
   },[])
 
   async function fetchRes(){
-    const response =await fatch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9160035&lng=77.64267889999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
-    
+    const response =await fatch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.07480&lng=72.88560&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+  
     const res = await response.json();
-    console.log(res.data.cards[1])
-
+    console.log(res.data.cards[1].card.card.gridElement.infowithstyle.restaurants);
+    setResList(res.data.cards[1].card.card.gridElement.infowithstyle.restaurants);
 
   }
-
-
 
   return (
     <>
       <div className=''>
-         <h1>Swiggy Mart</h1>
+         
       </div>
     </>
   )
