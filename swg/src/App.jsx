@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     fetchRes();
-  }, []);
+  }, [ ]);
 
   async function fetchRes() {
     try {
@@ -16,14 +16,11 @@ function App() {
         const res = await response.json();
         console.log(res.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
         setRestList(res.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
-      } else {
-        console.error('Failed');
       }
     } catch (error) {
       console.error('Error data:', error);
     }
   }
-
   return (
     <>
       {restList.length == 0 ? (<h2>Loading...</h2>) : 
