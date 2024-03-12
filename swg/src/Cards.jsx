@@ -9,7 +9,7 @@ const Cards = (res) => {
             <div>
                 <img className="w-96 h-56 rounded-3xl" src={Url_image + cloudinaryImageId} alt={name} />
             </div>
-            <div className="p-4">
+            <div className="">
                 <h2 className="text-xl font-semibold mb-2">{name}</h2>
                 <h3 className="text-lg text-gray-700 mb-2">Price: {costForTwo}</h3>
                 <p className="text-sm text-gray-600 mb-2">Avg Ratings: {avgRating}</p>

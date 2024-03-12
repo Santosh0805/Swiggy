@@ -30,7 +30,7 @@ function App() {
       {restList.length == 0 ? 
       (<h2>Loading...!!!!</h2>
       ) : (
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5 ">
         {restList.map((ele) =>
         // {console.log(ele)}
           (<Cards key={ele.info.id} res={ele} />))}
