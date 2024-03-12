@@ -1,20 +1,23 @@
-import React from 'react'
+import React from 'react';
+import Heading from './Navbar';
 
 const Cards = (res) => {
-    // console.log(res)
-    const Url_image = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/'
-    const {name, cuisines, areaName, avgRating,cloudinaryImageId,} = res.res.info
-    return (
-        <div>
-            <div>
-                <img src={Url_image + cloudinaryImageId} alt="" />
-            </div>
-            <h2>{name}</h2>
-            <h3>{areaName}</h3>
-            <p>cuisines - <span>{cuisines.join(' , ')}</span></p>
-        </div>
+    const Url_image = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/';
+    const { name, cuisines, avgRating, cloudinaryImageId, costForTwo } = res.res.info;
 
-    )
+    return (
+        <div className="shadow-lg rounded-lg overflow-hidden bg-white">
+            <div>
+                <img className="w-72 h-52 rounded-3xl" src={Url_image + cloudinaryImageId} alt={name} />
+            </div>
+            <div className="p-4">
+                <h2 className="text-xl font-semibold mb-2">{name}</h2>
+                <h3 className="text-lg text-gray-700 mb-2">Price: {costForTwo}</h3>
+                <p className="text-sm text-gray-600 mb-2">Avg Ratings: {avgRating}</p>
+                <p className="text-sm text-gray-600">Cuisines: <span className="font-semibold">{cuisines.join(', ')}</span></p>
+            </div>
+        </div>
+    );
 };
 
 export default Cards;
