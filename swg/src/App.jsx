@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Cards from './Cards';
 
+
 function App() {
   const [restList, setRestList] = useState([]);
 
@@ -21,31 +22,12 @@ function App() {
       console.error('Error data:', error);
     }
   }
-  const Navbar = () => {
-    return(
-      <>
-      <nav>
-          <ul>
-              <div>
-                  <h3 > Other </h3>
-              </div>
-              <div>
-                  <h3>Sign In </h3>
-              </div>
-              <div>
-                  <h3>Order </h3>
-              </div>
-          </ul>
-      </nav>
-  </>
-    )
-  }
   return (
     <>
       {restList.length == 0 ? 
       (<h2>Loading...!!!!</h2>
       ) : (
-      <div className="grid grid-cols-4 gap-5 ">
+      <div className="grid grid-cols-4 gap-5">
         {restList.map((ele) =>
         // {console.log(ele)}
           (<Cards key={ele.info.id} res={ele} />))}

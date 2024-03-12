@@ -1,5 +1,4 @@
 import React from 'react';
-import Heading from './Navbar';
 
 const Cards = (res) => {
     const Url_image = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/';
@@ -8,7 +7,7 @@ const Cards = (res) => {
     return (
         <div className="shadow-lg rounded-lg overflow-hidden bg-white">
             <div>
-                <img className="w-72 h-52 rounded-3xl" src={Url_image + cloudinaryImageId} alt={name} />
+                <img className="w-96 h-56 rounded-3xl" src={Url_image + cloudinaryImageId} alt={name} />
             </div>
             <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">{name}</h2>
