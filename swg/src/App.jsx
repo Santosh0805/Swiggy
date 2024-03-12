@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Cards from './Cards';
+import Heading from './Navbar/Heading';
 
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
     } catch (error) {
       console.error('Error data:', error);
     }
-  }
+  };
+
   return (
     <>
+    <Heading />
       {restList.length == 0 ? 
       (<h2>Loading...!!!!</h2>
       ) : (
