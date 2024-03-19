@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Cards from './Cards';
 import Heading from './Navbar/Heading';
-import cors from 'cors';
+
 
 function App() {
   const [restList, setRestList] = useState([]);
@@ -39,9 +39,4 @@ function App() {
   );
 }
 
-
-
-import cors from 'cors';
-
-App.use(cors());
 export default App;
