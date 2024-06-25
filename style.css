@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Basis Grotesque Pro", Arial, sans-serif;
+}
+
+body {
+    cursor: pointer;
+}
+
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 99vw;
+    /* border: 1px solid rgb(0, 237, 205); */
+    margin: auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    width: 100%;
+    /* border: 1px solid green; */
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 252, 249);
+
+}
+
+.input-box {
+    width: 360px;
+    height: 25px;
+    font-size: 14px;
+    border-style: none;
+    outline-style: none;
+
+
+}
+
+.search-box {
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    width: 350px;
+    border: 2px solid rgb(168, 165, 165);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-part-1 {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    height: 40px;
+    width: 100px;
+
+}
+
+.header-line {
+    font-size: 18px;
+    margin-top: -7px;
+}
+
+.bgcolor {
+    color: orangered;
+    font-size: 20px;
+}
+
+.right-part {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-icon {
+
+    height: 50px;
+
+}
+
+/* banner----------------- */
+
+.banner {
+    display: flex;
+    height: 306px;
+    width: 100%;
+    /* border: 1px solid brown; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: linear-gradient(rgb(251, 72, 242), pink);
+
+}
+
+.left-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 306px;
+    width: 50%;
+    /* border: 1px solid brown; */
+}
+
+.banner-line {
+    font-size: 48px;
+    letter-spacing: -0.43px;
+
+}
+
+.right-banner {
+    height: 306px;
+    width: 50%;
+    /* border: 1px solid rgb(15, 18, 82); */
+}
+
+.banner-right-pic {
+
+    width: 501px;
+    height: 300px;
+}
+
+/* --------------menu box----------------- */
+
+.menu-box {
+    height: 256px;
+    width: 80%;
+    /* border: 1px solid black; */
+
+
+}
+
+.mind-box {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.wht-mind {
+    font-size: 24px;
+}
+
+.next-icon {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Pizza {
+    height: 180px;
+    width: 144px;
+}
+
+/* ------------------------start restor place----------------- */
+
+.resto-box {
+    margin-top: 50px;
+    height: 350px;
+    width: 80%;
+    /* border: 1px solid gray; */
+
+}
+
+.place-line {
+    height: 40px;
+    /* border: 1px solid green; */
+
+}
+
+.place-name {
+
+    font-size: 24px;
+}
+
+.resto-card-box {
+    display: flex;
+    height: 280px;
+    width: 100%;
+    /* border: 1px solid rgb(219, 0, 0); */
+
+}
+
+.resto-card-1 {
+    padding: 5px;
+    height: 280px;
+    width: 20%;
+    /* border: 1px solid rgb(219, 0, 0); */
+    transition: transform .5s;
+
+}
+
+.resto-card-1:hover {
+    transform: scale(1.05);
+
+
+}
+
+/* .resto-card-1:hover{
+
+    transform: scale(1.1);
+    
+} */
+
+.card-one {
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.details {
+    padding: 5px;
+}
+
+.first-line {
+    font-size: 18px;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+}
+
+.dest {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.star-icon {
+    height: 25px;
+}
+
+
+/* ---------------more-food-box------------ */
+
+.more-food-box {
+    margin-top: 50px;
+    height: 600px;
+    width: 80%;
+    /* border: 1px solid rgb(0, 15, 219); */
+
+}
+
+.tag-line-more {
+    height: 40px;
+    /* border: 1px solid red; */
+}
+
+.more-card {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    height: 580px;
+    /* border: 3px solid black; */
+
+}
+
+.food-card-2 {
+    padding: 5px;
+    height: 280px;
+    width: 20%;
+    /* border: 1px solid rgb(219, 0, 0); */
+    transition: transform .2s;
+}
+
+.food-card-2:hover {
+    transform: scale(1.05);
+}
+
+.card-second {
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+}
+
+/* <!-- -----------start footer------ --> */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 30px;
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+}
+
+li {
+    color: rgb(172, 169, 169);
+    font-size: 18px;
+    font-family: sans-serif;
+
+}
+
+.headline {
+    font-weight: 600;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    line-height: 40px;
+}
+
+.legal {
+    font-weight: 600;
+    color: white;
+
+}
