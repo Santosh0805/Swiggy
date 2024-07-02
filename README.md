@@ -1,4 +1,4 @@
-# swiggy
+# Swiggy
 
 
 ![Macbook-Air-swiggy-966z vercel app](https://github.com/Santosh0805/swiggy/assets/140915549/9b941b60-1f19-4007-8f8e-458955b86fdc)
